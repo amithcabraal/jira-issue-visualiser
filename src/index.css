@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#graph-tooltip {
+  pointer-events: none;
+  background: rgb(31 41 55);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark #graph-tooltip {
+  background: rgb(55 65 81);
+}
+
+#graph-tooltip a {
+  color: rgb(59 130 246);
+}
+
+.dark #graph-tooltip a {
+  color: rgb(96 165 250);
+}
